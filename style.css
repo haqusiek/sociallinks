@@ -1,0 +1,122 @@
+.description {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.fa {
+  font-size: 40px;
+  width: 50px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  box-shadow: 0px 0px white;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+h1:hover {
+  opacity: 0.7;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 10px 80px 1px rgb(237 23 23);
+  -moz-box-shadow: 26px 11px 66px 21px rgba(237, 23, 23, 1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #050801;
+  font-family: 'Crimson Pro', serif;
+  ;
+  font-weight: bold;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+
+}
+
+a:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+a:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+a span {
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
